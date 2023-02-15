@@ -7,33 +7,100 @@
     tools:context=".HomeScreen">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:id="@+id/title"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:text="TIFFINS MENU"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="45dp"
+        android:text="BHAVANS CANTEEN"
         android:textAlignment="center"
-        android:textColor="#Ffab0f"
-        android:textSize="50sp"
+        android:textColor="#FF000000"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/container1"
-        android:layout_above="@id/bottom_nav"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bottom_nav"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_menu" />
+         />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="99dp"
+        app:srcCompat="@drawable/tiffin" />
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="134dp"
+        android:text="Tiffins" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="223dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="87dp"
+        app:srcCompat="@drawable/fast_food__1_" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="117dp"
+        android:text="FAST FOOD" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="189dp"
+        android:layout_height="105dp"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="117dp"
+        app:srcCompat="@drawable/bakery" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="120dp"
+        android:text="BAKERY" />
 
 </RelativeLayout>
